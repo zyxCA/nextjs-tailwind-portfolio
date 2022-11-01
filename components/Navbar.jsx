@@ -31,7 +31,13 @@ const Navbar = () => {
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
-          <Image src={logo} className=" w-20" alt="/" />
+          <Image
+            src="/../public/assets/circle.png"
+            className=" ml-2"
+            width={60}
+            height={60}
+            alt="/"
+          />
         </Link>
         <div className="flex items-center">
           <ul className="hidden md:flex">
@@ -78,8 +84,9 @@ const Navbar = () => {
               <div className="flex items-center justify-between w-full relative ">
                 <Link href={"/"} onClick={handleNav}>
                   <Image
-                    src={logo}
-                    className=" absolute left-0 translate-x-[-40%] translate-y-[-40%] top-0 w-20"
+                    src="/../public/assets/circle.png"
+                    width={60}
+                    height={60}
                     alt="/"
                   />
                 </Link>
