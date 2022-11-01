@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react"
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai"
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
-
+import logo from "../public/assets/logo.svg"
 const Navbar = () => {
   const [nav, setNav] = useState(false)
   const [shadow, setShadow] = useState(false)
@@ -31,12 +31,7 @@ const Navbar = () => {
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href={"/"}>
-          <Image
-            src="/../public/assets/navLogo.png"
-            width="125"
-            height="50"
-            alt="/"
-          />
+          <Image src={logo} className=" w-20" alt="/" />
         </Link>
         <div className="flex items-center">
           <ul className="hidden md:flex">
@@ -80,12 +75,11 @@ const Navbar = () => {
                 : "fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in-out duration-500"
             }>
             <div>
-              <div className="flex items-center justify-between w-full ">
+              <div className="flex items-center justify-between w-full relative ">
                 <Link href={"/"} onClick={handleNav}>
                   <Image
-                    src="/../public/assets/navLogo.png"
-                    width="87"
-                    height="35"
+                    src={logo}
+                    className=" absolute left-0 translate-x-[-40%] translate-y-[-40%] top-0 w-20"
                     alt="/"
                   />
                 </Link>
